@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SixBeeAppointments", "SixBeeAppointments.csproj", "{435A2537-ABB7-4B6A-B9E7-911128DDB76B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SixBeeAppointments.Tests", "SixBeeAppointments.Tests\SixBeeAppointments.Tests.csproj", "{EF3E1A86-5DFF-4227-B81B-E38E8FD409A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{435A2537-ABB7-4B6A-B9E7-911128DDB76B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{435A2537-ABB7-4B6A-B9E7-911128DDB76B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{435A2537-ABB7-4B6A-B9E7-911128DDB76B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{435A2537-ABB7-4B6A-B9E7-911128DDB76B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF3E1A86-5DFF-4227-B81B-E38E8FD409A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF3E1A86-5DFF-4227-B81B-E38E8FD409A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF3E1A86-5DFF-4227-B81B-E38E8FD409A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF3E1A86-5DFF-4227-B81B-E38E8FD409A6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D72FFE60-5DC9-4B7E-8F8F-0D3837F41AA7}
+	EndGlobalSection
+EndGlobal

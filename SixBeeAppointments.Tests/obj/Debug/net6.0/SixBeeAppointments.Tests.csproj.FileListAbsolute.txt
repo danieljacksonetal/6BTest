@@ -1,0 +1,7 @@
+C:\git\SixBeeAppointments\SixBeeAppointments.Tests\bin\Debug\net6.0\CoverletSourceRootsMapping
+C:\git\SixBeeAppointments\SixBeeAppointments.Tests\obj\Debug\net6.0\SixBeeAppointments.Tests.csproj.AssemblyReference.cache
+C:\git\SixBeeAppointments\SixBeeAppointments.Tests\obj\Debug\net6.0\SixBeeAppointments.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\git\SixBeeAppointments\SixBeeAppointments.Tests\obj\Debug\net6.0\SixBeeAppointments.Tests.AssemblyInfoInputs.cache
+C:\git\SixBeeAppointments\SixBeeAppointments.Tests\obj\Debug\net6.0\SixBeeAppointments.Tests.AssemblyInfo.cs
+C:\git\SixBeeAppointments\SixBeeAppointments.Tests\obj\Debug\net6.0\SixBeeAppointments.Tests.csproj.CoreCompileInputs.cache
+C:\git\SixBeeAppointments\SixBeeAppointments.Tests\bin\Debug\net6.0\CoverletSourceRootsMapping_SixBeeAppointments.Tests

@@ -2,9 +2,10 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>aspnet-SixBeeAppointments-cfac36a2-0727-4f28-bc63-73f7b85de907</UserSecretsId>
+	  <RootNamespace>SixBeeAppointments</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
