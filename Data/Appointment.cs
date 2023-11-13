@@ -12,5 +12,6 @@ namespace SixBeeAppointments.Data
         public string Issue { get; set; }
         public string ContactNumber { get; set; }
         public string Email { get; set; }
+        public bool IApproved { get; set; }
     }
 }

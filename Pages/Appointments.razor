@@ -2,13 +2,20 @@
 @using SixBeeAppointments.Data;
 @inject IAppointmentService AppointmentService
 
-
 <h3>Appointment</h3>
+
+<ModalComponant @ref="Modal"></ModalComponant>
+
 @if (appointments == null)
 {
     <p><em>Loading...</em></p>
 }
 else{
+
+    <button type="button" class="btn btn-primary" @onclick="() => Modal.Open()">
+        Add Appointment
+    </button>
+
     <table class="table">
         <thead>
             <tr>
@@ -34,6 +41,7 @@ else{
     </table>
 }
 @code {
+    private ModalComponant Modal { get; set; }
     private Appointment[]? appointments;
 
     protected override async Task OnInitializedAsync()

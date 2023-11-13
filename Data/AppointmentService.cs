@@ -14,5 +14,12 @@ namespace SixBeeAppointments.Data
         {
             return await _dbContext.Appointments.ToArrayAsync();
         }
+
+        public async Task<bool> CreateAppointmentAsync(Appointment appointment)
+        {
+            await _dbContext.Appointments.AddAsync(appointment);
+            await _dbContext.SaveChangesAsync();
+            return true;
+        }
     }
 }

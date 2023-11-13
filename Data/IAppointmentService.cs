@@ -3,5 +3,6 @@
     public interface IAppointmentService
     {
         Task<Appointment[]> GetAppointmentsAsync();
+        Task<bool> CreateAppointmentAsync(Appointment appointment);
     }
 }
