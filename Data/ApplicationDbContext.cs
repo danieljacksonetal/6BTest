@@ -5,11 +5,15 @@ namespace SixBeeAppointments.Data
 {
     public class ApplicationDbContext : IdentityDbContext
     {
-        public DbSet<Appointment> Appointments { get; set; }
+        public virtual DbSet<Appointment> Appointments { get; set; }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
+        }
+        public ApplicationDbContext()
+        {
+
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
