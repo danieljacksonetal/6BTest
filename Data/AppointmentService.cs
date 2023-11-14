@@ -26,7 +26,8 @@ namespace SixBeeAppointments.Data
         {
             var approved = appointment.IsApproved;
             var appointmentToUpdate = await _dbContext.Appointments.FirstOrDefaultAsync(x => x.Id == appointment.Id);
-            _dbContext.Update(appointment);
+            appointmentToUpdate.IsApproved = approved;
+            _dbContext.Update(appointmentToUpdate);
             await _dbContext.SaveChangesAsync();
         }
     }
