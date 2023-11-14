@@ -4,5 +4,6 @@
     {
         Task<Appointment[]> GetAppointmentsAsync();
         Task<bool> CreateAppointmentAsync(Appointment appointment);
+        Task ApproveAppointmentAsync(Appointment appointment);
     }
 }

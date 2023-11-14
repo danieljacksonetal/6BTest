@@ -1,0 +1,38 @@
+﻿@using SixBeeAppointments.Data;
+@inject IAppointmentService AppointmentService
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Name</th>
+            <th>Issue</th>
+            <th>Contact Number</th>
+            <th>Email</th>
+            <th>Approved</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Appointment appointment in appointments)
+        {
+            <tr>
+                <td>@appointment.AppointmentDate.ToShortDateString()</td>
+                <td>@appointment.Name</td>
+                <td>@appointment.Issue</td>
+                <td>@appointment.ContactNumber</td>
+                <td>@appointment.Email</td>                    
+                <td>@appointment.IsApproved</td>                    
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    private Appointment[] appointments;
+
+    protected override async Task OnInitializedAsync()
+    {
+        appointments = await AppointmentService.GetAppointmentsAsync();
+    } 
+
+}

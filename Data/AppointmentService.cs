@@ -21,5 +21,13 @@ namespace SixBeeAppointments.Data
             await _dbContext.SaveChangesAsync();
             return true;
         }
+
+        public async Task ApproveAppointmentAsync(Appointment appointment)
+        {
+            var approved = appointment.IsApproved;
+            var appointmentToUpdate = await _dbContext.Appointments.FirstOrDefaultAsync(x => x.Id == appointment.Id);
+            _dbContext.Update(appointment);
+            await _dbContext.SaveChangesAsync();
+        }
     }
 }
